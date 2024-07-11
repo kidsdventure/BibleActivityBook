@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | Moses the Mouse Adventures</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #f9f9f9;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 2em;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .hero {
+            margin-bottom: 2em;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .hero p {
+            margin: 0.5em 0 1em;
+            font-size: 1.2em;
+        }
+        .form {
+            margin-bottom: 2em;
+        }
+        .form input {
+            padding: 0.5em;
+            margin: 0.5em 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .form button {
+            padding: 0.5em 2em;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form button:hover {
+            background: #0056b3;
+        }
+        .about, .benefits {
+            text-align: left;
+            margin-bottom: 2em;
+        }
+        .about h2, .benefits h2 {
+            font-size: 1.5em;
+        }
+        .about p, .benefits ul {
+            margin: 0.5em 0;
+        }
+        .benefits ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .benefits ul li {
+            margin: 0.5em 0;
+        }
+        footer {
+            margin-top: 2em;
+            font-size: 0.8em;
+        }
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1>Discover the Adventures of Moses the Mouse!</h1>
+            <p>Sign up now to get updates about our exciting new children's activity book launch!</p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Name" id="name">
+            <input type="email" placeholder="Email" id="email">
+            <button onclick="submitForm()">Join the Adventure</button>
+        </div>
+        <div class="about">
+            <h2>What's Inside the Book?</h2>
+            <p>Explore 40 iconic objects from the Bible with Moses the Mouse.</p>
+            <p>Enjoy coloring, solving puzzles, and learning fascinating facts.</p>
+            <p>Tips and tricks for creative coloring.</p>
+            <p>Interactive activities and a reward system.</p>
+        </div>
+        <div class="benefits">
+            <h2>Why Sign Up?</h2>
+            <ul>
+                <li>Be the first to know about the book launch.</li>
+                <li>Receive exclusive sneak peeks.</li>
+                <li>Get special offers and discounts.</li>
+                <li>Download free sample pages.</li>
+            </ul>
+        </div>
+        <footer>
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+        </footer>
+    </div>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            if (name && email) {
+                alert('Thank you for signing up!');
+                // Here you can add the code to send the data to your server
+            } else {
+                alert('Please fill out both fields.');
+            }
+        }
+    </script>
+</body>
+</html>
